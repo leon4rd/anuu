@@ -10,6 +10,10 @@ ccache -M 10G
 ccache -o compression=true
 ccache -z
 lunch nad_onclite-userdebug
+mka api-stubs-docs
+mka hiddenapi-lists-docs
+mka system-api-stubs-docs
+mka test-api-stubs-docs
 mka nad -j$(nproc --all) &
 sleep 88m
 kill %
