@@ -9,8 +9,8 @@ export USE_CCACHE=1
 ccache -M 10G
 ccache -o compression=true
 ccache -z
-lunch nad_onclite-userdebug
-mka nad -j$(nproc --all) &
+breakfast onclite userdebug
+brunch onclite userdebug -j$(nproc --all) &
 sleep 88m
 kill %
 ccache -s
