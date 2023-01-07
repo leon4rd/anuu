@@ -10,7 +10,7 @@ ccache -o compression=true
 ccache -z
 source build/envsetup.sh
 breakfast onclite userdebug
-brunch onclite userdebug -j$(nproc --all) &
+brunch onclite userdebug -j$(nproc --all)
 ccache -s
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build $(cd /tmp/cirrus-ci-build/rom/out/target/product/onclite && ls crDroidAndroid*onclite*.zip) Completed!"
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Uploading Build $(cd /tmp/cirrus-ci-build/rom/out/target/product/onclite && ls crDroidAndroid*onclite*.zip)"
