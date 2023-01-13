@@ -12,3 +12,4 @@ curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="
 rclone copy ccache.tar.gz drv:onclite/nad/10/ -P
 cd /tmp/cirrus-ci-build
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Upload Ccache Finish"
+sudo rm -rf /tmp/cirrus-ci-build/* || echo "no problem"
