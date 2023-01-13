@@ -3,6 +3,8 @@ env:
     rcloneconfig: "ENCRYPTED[f42a09041d684029a3dddc79dd11e103e58cbda362d4dd8bfdaa744e9b741ecbb8a761ac61703e036e22556907cfb9e1]"
     tokentl: "ENCRYPTED[e575ee1e2c4e9bce02421186b5637a61936e2a95e0c8a304e567e9f3c0aeae158304a27425046cf1b8e78c38c92f6b42]"
     idtl: "ENCRYPTED[d339b4fe1cf6b2ecf484dd241eb44285e1d69bee2b8737cdf4ae9b271dbe35a4b63276ffc6a3a5512a8dc96fb7d4bc7a]"
+    ghtoken: "ENCRYPTED[23037e1bf8737fa8e7f52716ea7c8411e454f3517fc2cddf4cbd2951b3d6492968a1cae7e56c798a6d5d2ebc076e7a6d]"
+    ghtokena: "ENCRYPTED[4638a5a5b2d58f5e171129bc6702a7ca94c31558e2c68f4a0d6611a07dfe248b85b6e7b313d0568904aa204f24611cdf]"
 
 task:
   name: "builder"
@@ -18,4 +20,3 @@ task:
       - ./sync.sh
       - ./build.sh
       - ./ziping.sh
-      - rm -f *.log
