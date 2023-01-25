@@ -17,7 +17,7 @@ mkdir -p $HOME/.config/rclone
 echo "$rcloneconfig" > $HOME/.config/rclone/rclone.conf
 mkdir -p /tmp/cirrus-ci-build/ccache
 mkdir -p /tmp/cirrus-ci-build/rom
-rclone copy drv:onclite/nad/11/ccache.tar.gz . -P
+rclone copy drv:onclite/nad/12/ccache.tar.gz . -P
 time tar xf ccache.tar.gz
 sudo apt clean --dry-run
 cd /tmp/cirrus-ci-build
