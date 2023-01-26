@@ -9,7 +9,7 @@ com ()
 time com ccache 1
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Compress Ccache Finish"
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Start Upload Ccache"
-rclone copy ccache.tar.gz drv:onclite/nad/12/ -P
+time rclone copy ccache.tar.gz drv:onclite/los/13/ -P
 cd /tmp/cirrus-ci-build
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Upload Ccache Finish"
-rm -rf /tmp/cirrus-ci-build/*.log /tmp/cirrus-ci-build/rom || echo "no problem"
+sudo rm -rf /tmp/cirrus-ci-build/rom || echo "no problem"
