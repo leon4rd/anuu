@@ -19,6 +19,6 @@ mkdir -p /tmp/cirrus-ci-build/ccache
 mkdir -p /tmp/cirrus-ci-build/rom
 rclone copy drv:onclite/nad/10/ccache.tar.gz . -P
 time tar xf ccache.tar.gz
-sudo apt clean --dry-run
+sudo apt clean
 cd /tmp/cirrus-ci-build
 curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Setup Build Finish"
